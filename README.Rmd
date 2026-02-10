@@ -129,7 +129,7 @@ readr::read_csv("data-raw/dictionary.csv") |>
 ```
 
 ## Example 1
-
+A plot showing the collection locations of the truck with number plate "AUS 119X"
 ```{r}
 library(fslogisticskampala)
 library(ggplot2)
@@ -146,10 +146,10 @@ ggplot(aus, aes(x = lon, y = lat, color = date)) +
        y = "Latitude",
        color = "Treatment Plant") +
   theme_minimal()
-# Provide some example code here
 ```
 
 ## Example 2
+An interactive map of all collection points
 ```{r}
 #| label: fig-map_collection_locations
 #| fig-cap: "Map with collection locations and the existing treatment plants"
